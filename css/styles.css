@@ -59,9 +59,16 @@ img {
 }
 
 .link {
-  text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   display: flex;
+  
+  text-decoration: none;
   align-items: center;
+  color: var(--primary-text-color);
+ 
 }
 /* =============END components============= */
 
@@ -116,14 +123,6 @@ img {
     margin-left: 50px;
 }
 
-
-.link {
-    text-decoration: none;
-    color: var(--primary-text-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .list-item {
     display: flex;
     align-items: center;
@@ -157,7 +156,6 @@ img {
     transition-property: color, fill;
     transition-duration:250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .nav-item {
@@ -191,19 +189,19 @@ img {
 /* =============START main============= */
     /* =============START hero============= */
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
-    background-image: linear-gradient(
+  background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero/bg-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  url("../images/hero/bg-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-   max-width: 1600px;
-   margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto;
     
 }
 
@@ -533,17 +531,18 @@ address > p {
   background-color: rgba(0, 0, 0, 0.5);
 
   opacity: 1;
-  
+
   transition-property: opacity;
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 
 .backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
-  pointer-events: none;  
+  /* visibility: hidden; */
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
